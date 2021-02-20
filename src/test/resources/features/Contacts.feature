@@ -43,8 +43,8 @@ Feature: Contacts page
       | lastname  | Schneider   |
     Then the user should be able to login
 
-
-  Scenario Outline: login as a given user
+  @hkn
+  Scenario Outline: login as a given <user>
     Given the user is on the login page
     When the user logs in using following credentials
       | username  | <user>      |
